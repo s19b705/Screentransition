@@ -2,13 +2,10 @@ package jp.ac.shohoku.s19b705.screentransition;
 
  import android.app.Activity;
  import android.os.Bundle;
- import android.view.Menu;
- import android.view.MenuItem;
  import android.view.View;
  import android.widget.Button;
  import android.widget.LinearLayout;
  import android.view.View.OnClickListener;
- import android.widget.ListAdapter;
 
 public class MainActivity extends Activity {
  int count = 1;

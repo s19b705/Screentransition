@@ -8,5 +8,6 @@
      android:layout_height="wrap_content"
      android:text="送信しました"
      android:id="@+id/textView" />
+
   </LinearLayout>
 
