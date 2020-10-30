@@ -16,4 +16,7 @@ public class SubActivity extends Activity {
         setContentView(R.layout.activity_sub);
 
     }
+
+
+
 };
