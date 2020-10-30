@@ -8,8 +8,9 @@ package jp.ac.shohoku.s19b705.screentransition;
  import android.widget.Button;
  import android.widget.LinearLayout;
  import android.view.View.OnClickListener;
+ import android.widget.ListAdapter;
 
-         public class MainActivity extends Activity {
+public class MainActivity extends Activity {
  int count = 1;
  @Override
  protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +29,16 @@ package jp.ac.shohoku.s19b705.screentransition;
                      // レイアウトを R.layout.sample に変更する
                      getLayoutInflater().inflate(R.layout.view2, layout);
                      count=2;
-                     } else if (count == 2){
+                     } else if (count == 2) {
                      LinearLayout layout = (LinearLayout) findViewById(R.id.linearlayout2);
                      layout.removeAllViews();
-                     getLayoutInflater().inflate(R.layout.view1, layout);
-                     count=1;
-                     }
+                     getLayoutInflater().inflate(R.layout.view3, layout);
+                     count = 1;
+                     }else if (count == 3) {
+                     LinearLayout layout = (LinearLayout) findViewById(R.id.linearlayout3);
+                     layout.removeAllViews();
+                     getLayoutInflater().inflate(R.layout.view1,layout);
+                 }
                  }
  });
  }
